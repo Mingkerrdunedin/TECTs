@@ -42,7 +42,7 @@ ui <- fluidPage(
       ),
       dateRangeInput(
         inputId = "daterange",
-        label = "Select date:",
+        label = "Select date range:",
         start = "2018-03-31",
         end = "2021-06-01",
         min = min_date,
