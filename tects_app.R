@@ -104,7 +104,7 @@ server <- function(input, output, session) {
       filter = list(position = "top", clear = TRUE),
       rownames = FALSE,
       class = "cell-border stripe",
-      caption = "Table: Monthly domestic visitor spending by chosen RTO."
+      caption = "Table: Monthly domestic visitor spending on all products by chosen RTO."
     )
     
   })
