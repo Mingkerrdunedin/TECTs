@@ -21,7 +21,7 @@ tects$Date <- floor_date(tects$Date, "month")
 rto <- unique(tects$RTO)
 product <- unique(tects$Product)
 
-min_date <- min(tects$Date)
+min_date <- min(tects$Date)-1
 max_date <- max(tects$Date)
 
 tects <- tects %>%
@@ -43,7 +43,7 @@ ui <- fluidPage(
       dateRangeInput(
         inputId = "daterange",
         label = "Select date:",
-        start = "2018-04-01",
+        start = "2018-03-31",
         end = "2021-06-01",
         min = min_date,
         max = max_date,
